@@ -1,5 +1,9 @@
+/* Fonts */
+
 @import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* Reset */
 
 body,
 h6,
@@ -10,16 +14,14 @@ figure {
   display: block;
 }
 
+/* Body */
+
 body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
   background-color: rgb(255, 255, 255);
 }
 
-.img-logo {
-  width: 100px;
-  height: 100px;
-  padding-left: 2px;
-}
+/* Banner */
 
 .titulo-banner {
   display: block;
@@ -32,15 +34,20 @@ body {
   background-image: url("../images/design1.jpg");
   background-size: cover;
 }
+
+/* Main section */
+
 .seccion-principal {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
 
+/* Nav */
+
 .navegacion {
   display: inline-block;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(131, 134, 161);
   margin: 0;
   margin-right: 20px;
   min-width: 120px;
@@ -59,6 +66,14 @@ body {
   list-style-type: none;
 }
 
+/* Logo */
+
+.img-logo {
+  width: 100px;
+  height: 100px;
+  padding-left: 2px;
+}
+
 .aside-logo {
   display: block;
   position: absolute;
@@ -71,8 +86,11 @@ body {
   border: 2px double black;
 }
 
+/* Article */
+
 .seccion-articulo {
   width: 100%;
+  margin-top: 50px;
 }
 
 .sangria {
@@ -178,4 +196,167 @@ body {
   display: flex;
   float: right;
   margin-right: 8px;
+}
+
+/* Registration */
+
+.bloque_flex {
+  display: flex;
+}
+
+/* ******** Mapa ******** */
+
+/* Oculta radio */
+
+.mapa_radio {
+  appearance: none;
+  visibility: hidden;
+}
+
+/* Oculta mapas */
+
+.mapa_ajkatzenmaier {
+  display: none;
+}
+
+.mapa_greenbay {
+  display: none;
+}
+
+.mapa_howard {
+  display: none;
+}
+
+.mapa_hart {
+  display: none;
+}
+
+.mapa_north {
+  display: none;
+}
+
+.mapa_ajkatzenmaier_2 {
+  display: none;
+}
+
+.mapa_south {
+  display: none;
+}
+
+.mapa_howard_2 {
+  display: none;
+}
+
+.mapa_greenbay_2 {
+  display: none;
+}
+
+/* Muestra mapa */
+
+.mapa_ajkatzenmaier_class:checked ~ .mapa_ajkatzenmaier {
+  display: block;
+  position: absolute;
+  top: 780px;
+  left: 150px;
+}
+
+.mapa_greenbay_class:checked ~ .mapa_greenbay {
+  display: block;
+  position: absolute;
+  top: 780px;
+  left: 150px;
+}
+
+.mapa_howard_class:checked ~ .mapa_howard {
+  display: block;
+  position: absolute;
+  top: 780px;
+  left: 150px;
+}
+
+.mapa_hart_class:checked ~ .mapa_hart {
+  display: block;
+  position: absolute;
+  top: 780px;
+  left: 150px;
+}
+
+.mapa_north_class:checked ~ .mapa_north {
+  display: block;
+  position: absolute;
+  top: 780px;
+  left: 150px;
+}
+
+.mapa_ajkatzenmaier_2_class:checked ~ .mapa_ajkatzenmaier_2 {
+  display: block;
+  position: absolute;
+  top: 780px;
+  left: 150px;
+}
+
+.mapa_south_class:checked ~ .mapa_south {
+  display: block;
+  position: absolute;
+  top: 780px;
+  left: 150px;
+}
+
+.mapa_howard_2_class:checked ~ .mapa_howard_2 {
+  display: block;
+  position: absolute;
+  top: 780px;
+  left: 150px;
+}
+
+.mapa_greenbay_2_class:checked ~ .mapa_greenbay_2 {
+  display: block;
+  position: absolute;
+  top: 780px;
+  left: 150px;
+}
+
+/* Fondo label */
+
+.mapa_ajkatzenmaier_class:checked ~ label {
+  background-color: gold;
+}
+
+.mapa_greenbay_class:checked ~ label {
+  background-color: gold;
+}
+
+.mapa_howard_class:checked ~ label {
+  background-color: gold;
+}
+
+.mapa_hart_class:checked ~ label {
+  background-color: gold;
+}
+
+.mapa_north_class:checked ~ label {
+  background-color: gold;
+}
+
+.mapa_ajkatzenmaier_2_class:checked ~ label {
+  background-color: gold;
+}
+
+.mapa_south_class:checked ~ label {
+  background-color: gold;
+}
+
+.mapa_howard_2_class:checked ~ label {
+  background-color: gold;
+}
+
+.mapa_greenbay_2_class:checked ~ label {
+  background-color: gold;
+}
+
+/* Reservar espacio para el mapa */
+
+.mapa_aside {
+  width: 600px;
+  height: 450px;
 }

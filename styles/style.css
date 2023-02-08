@@ -263,7 +263,8 @@ input#submit_button {
   padding: 0px;
 }
 
-.bloque_flex_radio p {
+ul.bloque_flex_radio li.titulo_li {
+  min-width: 190px;
   width: 190px;
   margin: 10px 0px;
 }
@@ -277,22 +278,16 @@ input#submit_button {
   display: flex;
 }
 
-.closest_school label{
+.closest_school label {
   width: 178px;
 }
 
-.closest_school select{
+.closest_school select {
   display: flex;
   flex-grow: 1;
   margin-right: 10px;
-
 }
 
-.closest_school select option{
-  max-width: 90%;
-  margin: 5px 0px;
-  margin-right: 10px;
-}
 /* ******** Mapa ******** */
 
 /* Oculta radio */

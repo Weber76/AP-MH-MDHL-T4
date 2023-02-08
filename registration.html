@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Form</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <header>
       <h1 class="titulo-banner">Mighty Ducks Hockey League</h1>
       <aside class="aside-logo">
-        <img class="img-logo" src="./images/logo1.png" alt="Logo MDHL">
+        <img class="img-logo" src="./images/logo1.png" alt="Logo MDHL" />
       </aside>
     </header>
     <main class="seccion-principal">
@@ -26,66 +26,94 @@
           <li class="link-nav">
             <a href="contact.html">Contact</a>
           </li>
+          <li class="link-nav">
+            <a href="game_info.html">Game Information</a>
+          </li>
+          <li class="link-nav visitando">Registration</li>
         </ul>
       </nav>
       <section class="seccion-articulo">
         <h2 class="titulo-seccion">Registration Form</h2>
         <form action="show_data.html" method="get">
-          <div class="bloque_flex">
+          <ul class="bloque_flex">
             <!-- First name -->
-            <label for="first_name_id">Player's First Name:</label>
-            <input type="text" id="first_name_id" name="first_name">
+            <li>
+              <label for="first_name_id">Player's First Name:</label>
+              <input type="text" id="first_name_id" name="first_name" />
+            </li>
             <!-- Last name -->
-            <label for="last_name_id">Last Name:</label>
-            <input type="text" id="last_name_id" name="last_name">
-          </div>
-          <div class="bloque_flex">
+            <li>
+              <label for="last_name_id">Last Name:</label>
+              <input type="text" id="last_name_id" name="last_name" />
+            </li>
             <!-- Address -->
-            <label for="address_id">Street Address:</label>
-            <input type="text" id="address_id" name="address">
-          </div>
-          <div class="bloque_flex">
+            <li>
+              <label for="address_id">Street Address:</label>
+              <input type="text" id="address_id" name="address" />
+            </li>
             <!-- City -->
-            <label for="city_id">City:</label>
-            <input type="text" id="city_id" name="city">
+            <li>
+              <label for="city_id">City:</label>
+              <input type="text" id="city_id" name="city" />
+            </li>
             <!-- Zip code -->
-            <label for="zip_id">Zip Code:</label>
-            <input type="text" id="zip_id" name="zip">
-          </div>
-          <div class="bloque_flex">
+            <li>
+              <label for="zip_id">Zip Code:</label>
+              <input type="text" id="zip_id" name="zip" />
+            </li>
             <!-- Birth date -->
-            <label for="birth_date_id">Birth Date (mm/dd/yyyy):</label>
-            <input type="date" id="birth_date_id" name="birth_date">
+            <li>
+              <label for="birth_date_id">Birth Date (mm/dd/yyyy):</label>
+              <input type="date" id="birth_date_id" name="birth_date" />
+            </li>
+          </ul>
+          <ul class="bloque_flex_radio">
             <!-- Gender -->
-            <label for="">Gender:</label>
-            <input type="radio" id="female" name="gender" value="Female">
-            <label for="female">Female</label>
-            <input type="radio" id="male" name="gender" value="Male">
-            <label for="male">Male</label>
-          </div>
-          <div class="bloque_flex">
+            <p>Gender:</p>
+            <li>
+              <input type="radio" id="female" name="gender" value="Female" />
+              <label for="female">Female</label>
+            </li>
+            <li>
+              <input type="radio" id="male" name="gender" value="Male" />
+              <label for="male">Male</label>
+            </li>
+          </ul>
+          <ul class="bloque_flex_radio">
             <!-- Grade -->
-            <label for="">Grade:</label>
-            <input
-              type="radio"
-              id="preschool"
-              name="grade"
-              value="Pre-School"
-           >
-            <label for="preschool">Pre-School</label>
-            <input type="radio" id="first" name="grade" value="1st">
-            <label for="first">1st</label>
-            <input type="radio" id="second" name="grade" value="2nd">
-            <label for="second">2nd</label>
-            <input type="radio" id="third" name="grade" value="3rd">
-            <label for="third">3rd</label>
-            <input type="radio" id="fourth" name="grade" value="4th">
-            <label for="fourth">4th</label>
-            <input type="radio" id="fifth" name="grade" value="5th">
-            <label for="fifth">5th</label>
-          </div>
+            <p>Grade:</p>
+            <li>
+              <input
+                type="radio"
+                id="preschool"
+                name="grade"
+                value="Pre-School"
+              />
+              <label for="preschool">Pre-School</label>
+            </li>
+            <li>
+              <input type="radio" id="first" name="grade" value="1st" />
+              <label for="first">1st</label>
+            </li>
+            <li>
+              <input type="radio" id="second" name="grade" value="2nd" />
+              <label for="second">2nd</label>
+            </li>
+            <li>
+              <input type="radio" id="third" name="grade" value="3rd" />
+              <label for="third">3rd</label>
+            </li>
+            <li>
+              <input type="radio" id="fourth" name="grade" value="4th" />
+              <label for="fourth">4th</label>
+            </li>
+            <li>
+              <input type="radio" id="fifth" name="grade" value="5th" />
+              <label for="fifth">5th</label>
+            </li>
+          </ul>
           <!-- School -->
-          <fieldset>
+          <fieldset class="field_set closest_school">
             <legend>Which elementary school do you live near?</legend>
             <label for="school_id">Closest School:</label>
             <select name="school" id="school_id" multiple>
@@ -98,40 +126,40 @@
             </select>
           </fieldset>
           <!-- Position -->
-          <fieldset>
+          <fieldset class="field_set">
             <legend>
               What position(s) do you normally play? (check all that apply)
             </legend>
-            <input type="checkbox" id="forward" name="position_forward">
+            <input type="checkbox" id="forward" name="position_forward" />
             <label for="forward">Forward</label>
-            <input type="checkbox" id="midfield" name="position_midfield">
+            <input type="checkbox" id="midfield" name="position_midfield" />
             <label for="midfield">Midfield</label>
-            <input type="checkbox" id="defense" name="position_defense">
+            <input type="checkbox" id="defense" name="position_defense" />
             <label for="defense">Defense</label>
-            <input type="checkbox" id="goalkeeper" name="position_goalkeeper">
+            <input type="checkbox" id="goalkeeper" name="position_goalkeeper" />
             <label for="goalkeeper">Goalkeeper</label>
           </fieldset>
           <!-- Uniform -->
-          <fieldset>
+          <fieldset class="field_set">
             <legend>Uniform size:</legend>
-            <input type="radio" id="ys_id" name="uniform" value="Youth Small">
+            <input type="radio" id="ys_id" name="uniform" value="Youth Small" />
             <label for="ys_id">Youth Small</label>
             <input
               type="radio"
               id="ym_id"
               name="uniform"
               value="Youth Medium"
-           >
+            />
             <label for="ym_id">Youth Medium</label>
-            <input type="radio" id="yl_id" name="uniform" value="Youth Large">
+            <input type="radio" id="yl_id" name="uniform" value="Youth Large" />
             <label for="yl_id">Youth Large</label>
-            <input type="radio" id="s_id" name="uniform" value="Small">
+            <input type="radio" id="s_id" name="uniform" value="Small" />
             <label for="s_id">Small</label>
-            <input type="radio" id="m_id" name="uniform" value="Medium">
+            <input type="radio" id="m_id" name="uniform" value="Medium" />
             <label for="m_id">Medium</label>
-            <input type="radio" id="l_id" name="uniform" value="Large">
+            <input type="radio" id="l_id" name="uniform" value="Large" />
             <label for="l_id">Large</label>
-            <input type="radio" id="el_id" name="uniform" value="Extra-Large">
+            <input type="radio" id="el_id" name="uniform" value="Extra-Large" />
             <label for="el_id">Extra-Large</label>
           </fieldset>
           <!-- Permission -->
@@ -154,12 +182,27 @@
             In addition, by entering your name below, I also acknowledge that I
             have read the cancellation policy and agree to its terms.
           </p>
-          <label for="parent_sign">Parent/Guardian Name:</label>
-          <input type="text" id="parent_sign" name="parent_signature">
-          <label for="date_sign">Date</label>
-          <input type="text" id="date_sign" name="date_signature">
-          <!-- Submit -->
-          <input type="submit" value="Submit">
+          <ul class="bloque_flex">
+            <li>
+              <label for="parent_sign">Parent/Guardian Name:</label>
+              <input type="text" id="parent_sign" name="parent_signature" />
+            </li>
+            <li>
+              <label for="date_sign">Date</label>
+              <input
+                type="date"
+                id="date_sign"
+                name="date_signature"
+                value="2020-01-01"
+              />
+            </li>
+          </ul>
+          <ul class="bloque_flex">
+            <!-- Submit -->
+            <li class="submit_button">
+              <input type="submit" value="Submit" id="submit_button" />
+            </li>
+          </ul>
         </form>
       </section>
     </main>

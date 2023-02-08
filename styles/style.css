@@ -66,6 +66,10 @@ body {
   list-style-type: none;
 }
 
+.link-nav {
+  text-align: right;
+}
+
 /* Logo */
 
 .img-logo {
@@ -91,6 +95,7 @@ body {
 .seccion-articulo {
   width: 100%;
   margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .sangria {
@@ -201,9 +206,93 @@ body {
 /* Registration */
 
 .bloque_flex {
+  margin: 0px;
+  padding: 0px;
+}
+
+.bloque_flex li {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bloque_flex li label {
+  width: 190px;
+  margin: 10px 0px;
+}
+
+.bloque_flex li input {
+  flex-grow: 1;
+  max-width: 100%;
+  margin: 5px 0px;
+  margin-right: 10px;
+}
+
+.submit_button {
+  justify-content: center;
+}
+
+input#zip_id {
+  flex-grow: unset;
+  width: 120px;
+}
+
+input#birth_date_id {
+  flex-grow: unset;
+  width: 120px;
+}
+
+input#date_sign {
+  flex-grow: unset;
+  width: 120px;
+}
+
+input#submit_button {
+  font-weight: bold;
+  font-size: 2em;
+  background-color: rgb(236, 233, 21);
+  max-width: 200px;
+  margin-top: 20px;
+}
+
+.bloque_flex_radio {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.bloque_flex_radio p {
+  width: 190px;
+  margin: 10px 0px;
+}
+
+.field_set {
+  margin: 10px 10px 10px 0px;
+  padding: 10px 0px 10px 10px;
+}
+
+.closest_school {
   display: flex;
 }
 
+.closest_school label{
+  width: 178px;
+}
+
+.closest_school select{
+  display: flex;
+  flex-grow: 1;
+  margin-right: 10px;
+
+}
+
+.closest_school select option{
+  max-width: 90%;
+  margin: 5px 0px;
+  margin-right: 10px;
+}
 /* ******** Mapa ******** */
 
 /* Oculta radio */

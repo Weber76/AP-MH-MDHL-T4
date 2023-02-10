@@ -1,9 +1,5 @@
-/* Fonts */
-
 @import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
-/* Reset */
 
 body,
 h6,
@@ -14,63 +10,76 @@ figure {
   display: block;
 }
 
-/* Body */
-
 body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(236, 233, 173);
 }
-
-/* Banner */
 
 .titulo-banner {
   display: block;
-  padding-left: 20px;
-  margin: 0;
-  height: 300px;
+  padding: 10px;
   font-family: Kanit, Arial, Helvetica, sans-serif;
-  font-size: xx-large;
-  text-shadow: 2px 2px 3px #fffc3d;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: bolder;
+  background-color: rgb(240, 230, 0);
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+}
+
+.navegacion {
+  display: block;
+  width: 100%;
+  height: 300px;
   background-image: url("../images/design1.jpg");
   background-size: cover;
 }
 
-/* Main section */
+.oculto {
+  display: none;
+}
 
-.seccion-principal {
-  display: flex;
-  flex-direction: row;
+.grupo-nav {
+  position: absolute;
   width: 100%;
+  top: 426px;
+  background-color: rgb(150, 120, 0);
+  border: 2px solid black;
+  border-bottom: none;
 }
 
-/* Nav */
-
-.navegacion {
+.link-nav a,
+.visitando {
   display: inline-block;
-  background-color: rgb(131, 134, 161);
-  margin: 0;
-  margin-right: 20px;
-  min-width: 120px;
-  min-height: calc(100vh - 300px);
+  width: 28%;
+  padding: 4px 14px;
+  margin: 5px 3px;
+  border: 2px solid black;
+  color: white;
+  font-weight: bold;
+  text-align: center;
 }
 
-.lista-navegacion {
-  display: flex;
-  margin: 0px;
-  padding: 0px;
-  margin-right: 10px;
-  height: 400px;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-end;
-  list-style-type: none;
+.visitando {
+  background-color: gray;
+  box-shadow: 0px 0px 0px 5px rgb(240, 230, 0);
 }
 
-.link-nav {
-  text-align: right;
+.link-nav a {
+  text-decoration: none;
+  background-color: black;
 }
 
-/* Logo */
+.aside-logo {
+  position: absolute;
+  top: 10px;
+  right: 5%;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 2px solid black;
+}
 
 .img-logo {
   width: 100px;
@@ -78,369 +87,32 @@ body {
   padding-left: 2px;
 }
 
-.aside-logo {
-  display: block;
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  top: 235px;
-  right: 5%;
-  z-index: 1;
-  background-color: white;
-  border: 2px double black;
-}
-
-/* Article */
-
-.seccion-articulo {
-  width: 100%;
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-
-.sangria {
-  text-indent: 1.2em;
+.seccion-principal {
+  display: inline-block;
+  width: 50%;
+  height: 10px;
 }
 
 .titulo-seccion {
   display: block;
   position: absolute;
   width: 100%;
-  top: 251px;
-  left: 0px;
+  top: 449px;
   text-align: center;
-  background-color: black;
+  text-shadow: 2px 2px #000000;
+  border: 5px;
+  border-top: none;
+  border-left: none;
+  background-color: rgb(240, 230, 0);
+  padding-top: 20px;
+  padding-bottom: 10px;
   color: white;
+  box-shadow: 0px 20px 8px rgb(240, 230, 0);
 }
 
-.advertencia {
-  text-align: center;
-}
-
-.titulo-descripcion {
-  font-weight: bold;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.texto-descripcion {
-  margin: 0px;
-}
-
-.lista-regulacion::marker {
-  font-weight: bold;
-}
-
-.titulo-regulacion {
-  float: left;
-  margin-right: 5px;
-  font-weight: bold;
-}
-
-.titulo-regulacion-lista {
-  font-weight: bold;
-}
-
-.texto-regulacion {
-  margin-left: 0px;
-}
-
-.lista-uso-campo {
-  list-style-type: lower-latin;
-  margin-left: -64px;
-}
-
-.lista-play {
-  list-style-type: circle;
-  list-style-position: inside;
-}
-
-.texto-info-linea-1 {
-  font-style: italic;
-  font-size: 120%;
-}
-
-.texto-info-linea-2 {
-  font-style: italic;
-  text-decoration: underline;
-}
-
-.encabezado-fecha {
-  padding: 0px 20px;
-}
-
-.tabla-fecha {
-  text-align: center;
-  padding: 20px 0px;
-}
-
-.encabezado-teams {
-  padding-right: 60px;
-}
-
-.encabezado-location {
-  text-align: left;
-  padding-right: 100px;
-}
-
-.encabezado-times {
-  text-align: left;
-}
-
-.texto-pie {
-  display: block;
-  margin-bottom: 20px;
-}
-
-.texto-pie-phone {
-  display: flex;
-  float: left;
-}
-
-.texto-pie-email {
-  display: flex;
-  float: right;
-  margin-right: 8px;
-}
-
-/* Registration */
-
-.bloque_flex {
-  margin: 0px;
-  padding: 0px;
-}
-
-.bloque_flex li {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.bloque_flex li label {
-  width: 190px;
-  margin: 10px 0px;
-}
-
-.bloque_flex li input {
-  flex-grow: 1;
-  max-width: 100%;
-  margin: 5px 0px;
-  margin-right: 10px;
-}
-
-.submit_button {
-  justify-content: center;
-}
-
-input#zip_id {
-  flex-grow: unset;
-  width: 120px;
-}
-
-input#birth_date_id {
-  flex-grow: unset;
-  width: 120px;
-}
-
-input#date_sign {
-  flex-grow: unset;
-  width: 120px;
-}
-
-input#submit_button {
-  font-weight: bold;
-  font-size: 2em;
-  background-color: rgb(236, 233, 21);
-  max-width: 200px;
-  margin-top: 20px;
-}
-
-.bloque_flex_radio {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-}
-
-ul.bloque_flex_radio li.titulo_li {
-  min-width: 190px;
-  width: 190px;
-  margin: 10px 0px;
-}
-
-.field_set {
-  margin: 10px 10px 10px 0px;
-  padding: 10px 0px 10px 10px;
-}
-
-.closest_school {
-  display: flex;
-}
-
-.closest_school label {
-  width: 178px;
-}
-
-.closest_school select {
-  display: flex;
-  flex-grow: 1;
-  margin-right: 10px;
-}
-
-/* ******** Mapa ******** */
-
-/* Oculta radio */
-
-.mapa_radio {
-  appearance: none;
-  visibility: hidden;
-}
-
-/* Oculta mapas */
-
-.mapa_ajkatzenmaier {
-  display: none;
-}
-
-.mapa_greenbay {
-  display: none;
-}
-
-.mapa_howard {
-  display: none;
-}
-
-.mapa_hart {
-  display: none;
-}
-
-.mapa_north {
-  display: none;
-}
-
-.mapa_ajkatzenmaier_2 {
-  display: none;
-}
-
-.mapa_south {
-  display: none;
-}
-
-.mapa_howard_2 {
-  display: none;
-}
-
-.mapa_greenbay_2 {
-  display: none;
-}
-
-/* Muestra mapa */
-
-.mapa_ajkatzenmaier_class:checked ~ .mapa_ajkatzenmaier {
-  display: block;
-  position: absolute;
-  top: 780px;
-  left: 150px;
-}
-
-.mapa_greenbay_class:checked ~ .mapa_greenbay {
-  display: block;
-  position: absolute;
-  top: 780px;
-  left: 150px;
-}
-
-.mapa_howard_class:checked ~ .mapa_howard {
-  display: block;
-  position: absolute;
-  top: 780px;
-  left: 150px;
-}
-
-.mapa_hart_class:checked ~ .mapa_hart {
-  display: block;
-  position: absolute;
-  top: 780px;
-  left: 150px;
-}
-
-.mapa_north_class:checked ~ .mapa_north {
-  display: block;
-  position: absolute;
-  top: 780px;
-  left: 150px;
-}
-
-.mapa_ajkatzenmaier_2_class:checked ~ .mapa_ajkatzenmaier_2 {
-  display: block;
-  position: absolute;
-  top: 780px;
-  left: 150px;
-}
-
-.mapa_south_class:checked ~ .mapa_south {
-  display: block;
-  position: absolute;
-  top: 780px;
-  left: 150px;
-}
-
-.mapa_howard_2_class:checked ~ .mapa_howard_2 {
-  display: block;
-  position: absolute;
-  top: 780px;
-  left: 150px;
-}
-
-.mapa_greenbay_2_class:checked ~ .mapa_greenbay_2 {
-  display: block;
-  position: absolute;
-  top: 780px;
-  left: 150px;
-}
-
-/* Fondo label */
-
-.mapa_ajkatzenmaier_class:checked ~ label {
-  background-color: gold;
-}
-
-.mapa_greenbay_class:checked ~ label {
-  background-color: gold;
-}
-
-.mapa_howard_class:checked ~ label {
-  background-color: gold;
-}
-
-.mapa_hart_class:checked ~ label {
-  background-color: gold;
-}
-
-.mapa_north_class:checked ~ label {
-  background-color: gold;
-}
-
-.mapa_ajkatzenmaier_2_class:checked ~ label {
-  background-color: gold;
-}
-
-.mapa_south_class:checked ~ label {
-  background-color: gold;
-}
-
-.mapa_howard_2_class:checked ~ label {
-  background-color: gold;
-}
-
-.mapa_greenbay_2_class:checked ~ label {
-  background-color: gold;
-}
-
-/* Reservar espacio para el mapa */
-
-.mapa_aside {
-  width: 600px;
-  height: 450px;
+.articulo {
+  display: inline;
+  position: relative;
+  top: 150px;
+  left: 20px;
 }

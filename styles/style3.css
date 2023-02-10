@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body,
+h6,
+figure {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  display: block;
+}
+
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  background-color: rgb(236, 233, 173);
+}
+
+.titulo-banner {
+  display: block;
+  padding: 10px;
+  font-family: Kanit, Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: bolder;
+  background-color: rgb(240, 230, 0);
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+}
+
+.navegacion {
+  display: block;
+  width: 100%;
+  height: 300px;
+  background-image: url("../images/design1.jpg");
+  background-size: cover;
+}
+
+.oculto {
+  display: none;
+}
+
+.grupo-nav {
+  position: absolute;
+  width: 100%;
+  top: 426px;
+  background-color: rgb(150, 120, 0);
+  border: 2px solid black;
+  border-bottom: none;
+}
+
+.link-nav a,
+.visitando {
+  display: inline-block;
+  width: 28%;
+  padding: 4px 14px;
+  margin: 5px 3px;
+  border: 2px solid black;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.visitando {
+  background-color: gray;
+  box-shadow: 0px 0px 0px 5px rgb(240, 230, 0);
+}
+
+.link-nav a {
+  text-decoration: none;
+  background-color: black;
+}
+
+.aside-logo {
+  position: absolute;
+  top: 10px;
+  right: 5%;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.img-logo {
+  width: 100px;
+  height: 100px;
+  padding-left: 2px;
+}
+
+.seccion-principal {
+  display: inline-block;
+  width: 50%;
+  height: 10px;
+}
+
+.titulo-seccion {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 449px;
+  text-align: center;
+  text-shadow: 2px 2px #000000;
+  border: 5px;
+  border-top: none;
+  border-left: none;
+  background-color: rgb(240, 230, 0);
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: white;
+  box-shadow: 0px 20px 8px rgb(240, 230, 0);
+}
+
+.articulo {
+  display: inline;
+  position: relative;
+  top: 150px;
+  left: 20px;
+}

@@ -26,74 +26,249 @@
           <li class="link-nav">
             <a href="contact.html">Contact</a>
           </li>
+          <li class="link-nav visitando">Game Information</li>
+          <li class="link-nav">
+            <a href="registration.html">Registration</a>
+          </li>
         </ul>
       </nav>
       <section class="seccion-articulo">
         <h2 class="titulo-seccion">Game Information</h2>
         <p class="texto-info-linea-1">Fall Schedule</p>
         <p class="texto-info-linea-2">* All games take place on Saturday.</p>
-        <table>
-          <thead>
-            <tr>
-              <th class="encabezado-fecha">SEPTEMBER</th>
-              <th class="encabezado-teams">Teams</th>
-              <th class="encabezado-location">Location</th>
-              <th class="encabezado-times">Times</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td rowspan="2" class="tabla-fecha">9/01</td>
-              <td>U1 and U4</td>
-              <td>AJ Katzenmaier</td>
-              <td>9:30 a.m.</td>
-            </tr>
-            <tr>
-              <td>U3 and U2</td>
-              <td>Greenbay</td>
-              <td>1:00 p.m.</td>
-            </tr>
-            <tr>
-              <td rowspan="2" class="tabla-fecha">9/01</td>
-              <td>U5 and U6</td>
-              <td>Howard A Yeager</td>
-              <td>9:30 a.m.</td>
-            </tr>
-            <tr>
-              <td>U6 and U1</td>
-              <td>Marjorie P Hart</td>
-              <td>1:00 p.m.</td>
-            </tr>
-            <tr>
-              <td rowspan="2" class="tabla-fecha">9/01</td>
-              <td>U2 and U4</td>
-              <td>North</td>
-              <td>9:30 a.m.</td>
-            </tr>
-            <tr>
-              <td>U3 and U5</td>
-              <td>AJ Katzenmaier</td>
-              <td>1:00 p.m.</td>
-            </tr>
-            <tr>
-              <td rowspan="2" class="tabla-fecha">9/01</td>
-              <td>U1 and U3</td>
-              <td>South</td>
-              <td>9:30 a.m.</td>
-            </tr>
-            <tr>
-              <td>U2 and U6</td>
-              <td>Howard A Yeager</td>
-              <td>1:00 p.m.</td>
-            </tr>
-            <tr>
-              <td class="tabla-fecha">9/29</td>
-              <td>U4 and U5</td>
-              <td>Greenbay</td>
-              <td>9:30 a.m.</td>
-            </tr>
-          </tbody>
-        </table>
+        <form>
+          <table>
+            <thead>
+              <tr>
+                <th class="encabezado-fecha">SEPTEMBER</th>
+                <th class="encabezado-teams">Teams</th>
+                <th class="encabezado-location">Location</th>
+                <th class="encabezado-times">Times</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2" class="tabla-fecha">9/01</td>
+                <td>U1 and U4</td>
+                <td>
+                  <input
+                    type="radio"
+                    id="mapa_ajkatzenmaier_id"
+                    name="location_sel"
+                    checked
+                    class="mapa_radio mapa_ajkatzenmaier_class"
+                 >
+                  <label for="mapa_ajkatzenmaier_id">AJ Katzenmaier</label>
+                  <iframe
+                    class="mapa_ajkatzenmaier"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11799.122572613156!2d-87.8628046!3d42.3258772!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcf2bbe275c6da815!2sAJ%20Katzenmaier%20Academy!5e0!3m2!1ses-419!2sde!4v1675728105112!5m2!1ses-419!2sde"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </td>
+                <td>9:30 a.m.</td>
+              </tr>
+              <tr>
+                <td>U3 and U2</td>
+                <td>
+                  <input
+                    type="radio"
+                    id="mapa_greenbay_id"
+                    name="location_sel"
+                    class="mapa_radio mapa_greenbay_class"
+                 >
+                  <label for="mapa_greenbay_id">Greenbay</label>
+
+                  <iframe
+                    class="mapa_greenbay"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5691.651220036272!2d-88.055482!3d44.49824!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xce7ea10c5c762be2!2sResch%20Center!5e0!3m2!1sen!2sus!4v1675730660474!5m2!1sen!2sus"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </td>
+                <td>1:00 p.m.</td>
+              </tr>
+              <tr>
+                <td rowspan="2" class="tabla-fecha">9/01</td>
+                <td>U5 and U6</td>
+                <td>
+                  <input
+                    type="radio"
+                    id="mapa_howard_id"
+                    name="location_sel"
+                    class="mapa_radio mapa_howard_class"
+                 >
+                  <label for="mapa_howard_id">Howard A Yeager</label>
+                  <iframe
+                    class="mapa_howard"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11801.080246623287!2d-87.8538811!3d42.3154383!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8b51fa5d6efe771a!2sHoward%20A.%20Yeager%20School%20(PREK-K)!5e0!3m2!1ses-419!2sar!4v1675802343744!5m2!1ses-419!2sar"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </td>
+                <td>9:30 a.m.</td>
+              </tr>
+              <tr>
+                <td>U6 and U1</td>
+                <td>
+                  <input
+                    type="radio"
+                    id="mapa_hart_id"
+                    name="location_sel"
+                    class="mapa_radio mapa_hart_class"
+                 >
+                  <label for="mapa_hart_id">Marjorie P Hart</label>
+                  <iframe
+                    class="mapa_hart"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11873.159353527837!2d-87.6459727!3d41.9296229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdbff5d5dfcfcfa35!2sMarjorie%20P%20Hart%20Elementary!5e0!3m2!1ses-419!2sar!4v1675802965615!5m2!1ses-419!2sar"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </td>
+                <td>1:00 p.m.</td>
+              </tr>
+              <tr>
+                <td rowspan="2" class="tabla-fecha">9/01</td>
+                <td>U2 and U4</td>
+                <td>
+                  <input
+                    type="radio"
+                    id="mapa_north_id"
+                    name="location_sel"
+                    class="mapa_radio mapa_north_class"
+                 >
+                  <label for="mapa_north_id">North</label>
+                  <iframe
+                    class="mapa_north"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2967.8532449779127!2d-87.86573778425426!3d41.93900476957908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fb5780ddb9c43%3A0x227feb04cbcf4c4!2sNorth%20Elementary%20School!5e0!3m2!1ses-419!2sar!4v1675804951628!5m2!1ses-419!2sar"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </td>
+                <td>9:30 a.m.</td>
+              </tr>
+              <tr>
+                <td>U3 and U5</td>
+                <td>
+                  <input
+                    type="radio"
+                    id="mapa_ajkatzenmaier_2_id"
+                    name="location_sel"
+                    class="mapa_radio mapa_ajkatzenmaier_2_class"
+                 >
+                  <label for="mapa_ajkatzenmaier_2_id">AJ Katzenmaier</label>
+                  <iframe
+                    class="mapa_ajkatzenmaier_2"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11799.122572613156!2d-87.8628046!3d42.3258772!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcf2bbe275c6da815!2sAJ%20Katzenmaier%20Academy!5e0!3m2!1ses-419!2sde!4v1675728105112!5m2!1ses-419!2sde"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </td>
+                <td>1:00 p.m.</td>
+              </tr>
+              <tr>
+                <td rowspan="2" class="tabla-fecha">9/01</td>
+                <td>U1 and U3</td>
+                <td>
+                  <input
+                    type="radio"
+                    id="mapa_south_id"
+                    name="location_sel"
+                    class="mapa_radio mapa_south_class"
+                 >
+                  <label for="mapa_south_id">South</label>
+
+                  <iframe
+                    class="mapa_south"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d379455.5326796153!2d-88.03308608776587!3d42.01108342887788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880feccac2135a21%3A0x8ce88e90b96bbec1!2sSouth%20Elementary%20School%20(K-5)!5e0!3m2!1ses-419!2sar!4v1675808936162!5m2!1ses-419!2sar"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </td>
+                <td>9:30 a.m.</td>
+              </tr>
+              <tr>
+                <td>U2 and U6</td>
+                <td>
+                  <input
+                    type="radio"
+                    id="mapa_howard_2_id"
+                    name="location_sel"
+                    class="mapa_radio mapa_howard_2_class"
+                 >
+                  <label for="mapa_howard_2_id">Howard A Yeager</label>
+                  <iframe
+                    class="mapa_howard_2"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11801.080246623287!2d-87.8538811!3d42.3154383!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8b51fa5d6efe771a!2sHoward%20A.%20Yeager%20School%20(PREK-K)!5e0!3m2!1ses-419!2sar!4v1675802343744!5m2!1ses-419!2sar"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </td>
+                <td>1:00 p.m.</td>
+              </tr>
+              <tr>
+                <td class="tabla-fecha">9/29</td>
+                <td>U4 and U5</td>
+                <td>
+                  <input
+                    type="radio"
+                    id="mapa_greenbay_2_id"
+                    name="location_sel"
+                    class="mapa_radio mapa_greenbay_2_class"
+                 >
+                  <label for="mapa_greenbay_2_id">Greenbay</label>
+
+                  <iframe
+                    class="mapa_greenbay_2"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5691.651220036272!2d-88.055482!3d44.49824!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xce7ea10c5c762be2!2sResch%20Center!5e0!3m2!1sen!2sus!4v1675730660474!5m2!1sen!2sus"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </td>
+                <td>9:30 a.m.</td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+
+        <aside class="mapa_aside"></aside>
+
         <dl>
           <dt class="titulo-regulacion">Facility Type:</dt>
           <dd class="texto-regulacion texto-pie">Outdoor</dd>
